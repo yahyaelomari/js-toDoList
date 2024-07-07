@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>toDoList</title>
+    <link rel="stylesheet" href="toDoList.css">
+    <script></script>
 </head>
 <body>
+<h3>To do list</h3>
+<div class="tasksInputGrid"   >
+<input class="js-taskToAdd taskNameInput" onkeydown="addTaskEventKey(event)" placeholder="task name">
+<input type="datetime-local" class="js-dateInput dateInput">
+<button class="btnToAddTask" onclick="addTask()">Add Task</button>
+</div>
+<div class="js-tasksDiv tasksGrid"></div>
 
+
+<script src="toDoList.js"></script>
 </body>
 </html>
